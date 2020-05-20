@@ -5,7 +5,7 @@ import numpy as np
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
-
+#get filters gets the filters from the user
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -47,7 +47,7 @@ def get_filters():
     print('-'*40)
     return city, month, day
 
-
+#load data loads data for city based on filters set by user
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -77,7 +77,7 @@ def load_data(city, month, day):
         df = df[df['day_of_week'] == day.title()]
     return df
 
-
+#time stats displays stats on most frequent times of travel
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
@@ -127,7 +127,7 @@ def time_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+#station stats function that displays stats on poplular stations and trip
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
@@ -146,7 +146,7 @@ def station_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+#trip duration stats that shows stats on total and average trip duration
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
@@ -162,7 +162,7 @@ def trip_duration_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+#user stats displays stats on bikeshare users
 def user_stats(df):
     """Displays statistics on bikeshare users."""
 
@@ -181,7 +181,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+#main
 def main():
     while True:
         city, month, day = get_filters()
