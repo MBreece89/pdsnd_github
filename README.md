@@ -1,12 +1,43 @@
 ### Date created
-Include the date you created this project and README file.
 5/20/2020
 
-### Programming for data science
+# Project Overview:
 
+This project focuses on pandas library usage and simple statistics methods to perform a rudimentary analysis on the bikeshare data from three major U.S. cities - Chicago, Washington, and New York City - to display information such as most popular days or most common stations.
 
-### Description
-This project in the programming data science is for the version control. This version control is forked from the udacity github page and the bike share python app that was made will be uploaded with it.
+### Running the program:
+
+You can input 'python bikeshare.py' on your terminal to run this program. I use Anaconda's command prompt on a Windows 10 machine.
+
+### Program Details:
+
+The program takes user input for the city (e.g. Chicago), month for which the user wants to view data (e.g. January; also includes an 'all' option), and day for which the user wants to view data (e.g. Monday; also includes an 'all' option).
+
+Upon receiving the user input, it goes ahead and asks the user if they want to view the raw data (5 rows of data initially) or not. Following the input received, the program prints the following details:
+
+* Most popular month
+* Most popular day
+* Most popular hour
+* Most popular start station
+* Most popular end station
+* Most popular combination of start and end stations
+* Total trip duration
+* Average trip duration
+* Types of users by number
+* Types of users by gender (if available)
+* The oldest user (if available)
+* The youngest user (if available)
+* The most common birth year amongst users (if available)
+* Display raw data from the csv files
+
+Finally, the user is prompted with the choice of restarting the program or not.
+
+# Built with:
+
+* [Python 3.6.6](https://www.python.org/) - The language used to develop this.
+* [pandas](https://pandas.pydata.org/) - One of the libraries used for this.
+* [numpy](http://www.numpy.org/) - One of the libraries used for this.
+* [time](https://docs.python.org/2/library/time.html) - One of the libraries used for this.
 
 ### Files used
 .gitignore
@@ -15,4 +46,3 @@ README.md
 
 ### Credits
 credit given to udacity and the udacity team
-
